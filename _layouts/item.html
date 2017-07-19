@@ -32,7 +32,7 @@
       <ul>  
          {% for people in page.peoples%}
         {% assign foo = people %}
-        {% include peoples.html people=foo %}
+        {% include people.html people=foo %}
         <li><strong> {{ people.role }} </strong> {{ people.id}} </li> 
         {% endfor %} 
       </ul>
