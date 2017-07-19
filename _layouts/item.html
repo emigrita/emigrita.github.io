@@ -29,10 +29,10 @@
       <main>
       <h1> {{ page.title }}</h1>
       <h3> {{ page.description }}</h3>
-      <ul> {% for people in page.peoples %}  
-        <li> <strong> From: </strong> {{ people.sender-id }} </li>
-        <li> <strong> To: </strong> {{ people.receiver-id }} </li>
-      {% endfor %}</ul>
+      <ul>  
+        <li> {% for people in page.peoples.sender-id %} <strong> From: </strong> {{ people.sender-id }} {% endfor %}</li>
+        <li> {% for people in page.peoples.receiver-id %}<strong> To: </strong> {{ people.receiver-id }} {% endfor %} </li>
+      </ul>
       <p><strong>Date:</strong> {{ page.date }}</p>
       
         {{ content }}
