@@ -1,1 +1,9 @@
 title: Emigrita
+description: Short description here
+github:
+  - is_project_page: true
+show_downloads: true
+github_username: Czech-IT
+copyright: 2017 
+gems: 
+- jekyll-feed
